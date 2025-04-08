@@ -37,6 +37,7 @@ input {
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 123.33px;
 }
 
 .disableScroll {
