@@ -35,6 +35,10 @@ input {
   color: var(--color-fonts);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .disableScroll {
   margin: 0;
   height: 100%;
@@ -55,12 +59,13 @@ input {
 /* *--------------------- Root ---------------------* */
 
 :root {
-  --color-secondary-color: #c4c4c4;
+  --color-primary: #000000;
+  --color-secondary: #c4c4c4;
   --color-primary-shadow: #1570ef52;
   --color-sec-shadow: #c8c0c051;
 
   --color-background: #fff;
-  --color-background-grey: #F2F2F2;
+  --color-background-grey: #f2f2f2;
 
   --color-fonts: #000000;
   --color-fonts-grey: #5d6679;
@@ -113,10 +118,15 @@ button {
 /* *------------------ Header -------------------* */
 
 .header {
+  background: var(--color-background);
   display: flex;
+  position: sticky;
+  top: 0;
+  right: 0;
   justify-content: space-between;
   align-items: center;
   padding: 2.5rem;
+  z-index: 4;
 }
 
 .header__menu {
@@ -150,7 +160,7 @@ button {
     width: 8rem;
   }
   .header__buttons span {
-    border: solid 0.1rem var(--color-secondary-color);
+    border: solid 0.1rem var(--color-secondary);
     border-radius: 0.5rem;
     padding: 0.4rem 0.6rem;
   }
@@ -163,7 +173,7 @@ button {
 /* *------------------ Intro -------------------* */
 .intro {
   width: 100%;
-  height: calc(100vh - 160px);
+  height: calc(100vh - 123.33px);
 }
 
 .intro__main {
@@ -195,5 +205,61 @@ button {
   }
   100% {
     transform: translatey(0px);
+  }
+}
+
+/* *------------------ About ME -------------------* */
+.aboutMe {
+  padding: 6.6rem 2.5rem;
+  background-color: var(--color-background-grey);
+  min-height: calc(100vh - 123.33px);
+}
+
+.aboutMe__title {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.aboutMe__title h2 {
+  width: 20rem;
+  text-align: center;
+}
+
+.aboutMe__title__line {
+  height: 1px;
+  width: 100%;
+  background: var(--color-primary);
+}
+
+.aboutMe__body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.aboutMe__body__text {
+  line-height: 2;
+}
+
+.aboutMe__body__photo {
+  margin: 2rem auto;
+  width: 200px;
+  height: 200px;
+}
+
+@media screen and (min-width: 1000px) {
+  .aboutMe__body {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+  }
+  .aboutMe__body__photo {
+    margin: 0rem 0rem 0rem 4rem;
+    width: 300px;
+    height: 300px;
   }
 }
