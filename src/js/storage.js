@@ -89,6 +89,22 @@ const skillsData = [
       "Basic Relational Concepts",
     ],
   },
+  {
+    id: 7,
+    title: "Google IT Support Specialist",
+    text: `This certificate demonstrates my foundational knowledge in IT support. I’ve learned how computers, operating systems, networks, and security concepts work together to support users and businesses. I’ve also practiced troubleshooting, customer service, and basic system administration tasks—skills essential for any entry-level IT role.`,
+    imgURL: "../assets/images/googleIT.png",
+    tags: [
+      "IT Fundamentals",
+      "Troubleshooting",
+      "Customer Support",
+      "Operating Systems",
+      "System Administration",
+      "Networking Basics",
+      "Security Fundamentals",
+      "Technical Support",
+    ],
+  },
 ];
 
 class Storage {
