@@ -12,8 +12,27 @@ const skillsData = Storage.getSkiilsData();
 
 // selection
 const skillsContainer = document.querySelector(".skills__body");
+const closeBtn = document.querySelector(".close_menu");
+const openBtn = document.querySelector(".openHam_icon");
+const hamMenuModal = document.querySelector(".header_hamMenu");
+const hamMenuModalBack = document.querySelector(".header_hamMenu__back");
+const hamMenuOptions = [...document.querySelectorAll(".header_hamMenu__item")];
 
 class Ui {
+  addEventListener() {
+    closeBtn.addEventListener("click", () => this.closeOpenMenuModal());
+    openBtn.addEventListener("click", () => this.closeOpenMenuModal());
+    hamMenuModalBack.addEventListener("click", () => this.closeOpenMenuModal());
+    hamMenuOptions.forEach((item) =>
+      item.addEventListener("click", () => this.closeOpenMenuModal())
+    );
+  }
+
+  closeOpenMenuModal() {
+    hamMenuModal.classList.toggle("display");
+    hamMenuModalBack.classList.toggle("display");
+  }
+
   // adding the skills data to the dom
   addToDom(skillsData) {
     skillsData.forEach((skill) => {
@@ -49,4 +68,5 @@ class Ui {
 document.addEventListener("DOMContentLoaded", () => {
   const ui = new Ui();
   ui.addToDom(skillsData);
+  ui.addEventListener();
 });
