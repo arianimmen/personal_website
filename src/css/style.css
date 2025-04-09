@@ -144,11 +144,21 @@ button {
   }
   .header__menu {
     position: relative;
-    left: 2rem;
+    left: 5rem;
     display: flex;
     justify-content: space-between;
     width: 30rem;
   }
+
+  .header a {
+    font-size: 1.2rem;
+  }
+
+  .header span {
+    font-size: 1rem;
+    font-weight: 300;
+  }
+
   .header__menu__items {
     display: flex;
     justify-content: space-between;
@@ -158,7 +168,7 @@ button {
   .header__buttons {
     display: flex;
     justify-content: space-between;
-    width: 8rem;
+    width: 10.5rem;
   }
   .header__buttons span {
     border: solid 0.1rem var(--color-secondary);
@@ -176,7 +186,6 @@ button {
   width: 100%;
   height: calc(var(--vh, 1vh) * 100 - 123.33px);
 }
-
 
 .intro__main {
   display: flex;
@@ -239,13 +248,11 @@ button {
   height: 100%;
   display: flex;
   flex-direction: column;
-  
 }
 
 .aboutMe__body__text {
   line-height: 2;
   text-align: justify;
-
 }
 
 .aboutMe__body__photo {
@@ -266,5 +273,103 @@ button {
     margin: 0rem 0rem 0rem 4rem;
     width: 300px;
     height: 300px;
+  }
+}
+
+/* *------------------ skills -------------------* */
+.skills {
+  padding: 6.6rem 2.5rem;
+  background-color: var(--color-background);
+  min-height: calc(100vh - 123.33px);
+}
+
+.skills__title {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.skills__title h2 {
+  width: 20rem;
+  text-align: center;
+}
+
+.skills__title__line {
+  height: 1px;
+  width: 100%;
+  background: var(--color-primary);
+}
+
+.skills__body__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5rem;
+}
+
+.skills__body__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.skills__body__item__text__header {
+  font-size: large;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.skills__body__item__text__body {
+  line-height: 1.7;
+}
+
+.skills__body__item__text hr {
+  margin: 1rem 0rem;
+}
+
+.skills__body__item img {
+  width: 220px;
+  height: 220px;
+}
+
+.skills__body__item__text ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.skills__body__item__text li {
+  color: var(--color-background);
+  background: rgb(75, 75, 75);
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  margin-right: 1rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+
+@media screen and (min-width: 800px) {
+  .skills__body__item {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .skills__body__item__text__body {
+    line-height: 1.7;
+    text-align: justify;
+  }
+
+  .skills__body__item img {
+    order: 1;
+    margin-right: 2rem;
+  }
+
+  .skills__body__item__text {
+    order: 2;
   }
 }
