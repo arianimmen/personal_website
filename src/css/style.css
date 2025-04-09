@@ -174,8 +174,9 @@ button {
 /* *------------------ Intro -------------------* */
 .intro {
   width: 100%;
-  height: calc(100vh - 123.33px);
+  height: calc(var(--vh, 1vh) * 100 - 123.33px);
 }
+
 
 .intro__main {
   display: flex;
@@ -238,10 +239,13 @@ button {
   height: 100%;
   display: flex;
   flex-direction: column;
+  
 }
 
 .aboutMe__body__text {
   line-height: 2;
+  text-align: justify;
+
 }
 
 .aboutMe__body__photo {

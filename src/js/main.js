@@ -1,8 +1,6 @@
-function scrollToSection(e, target) {
-  e.preventDefault();
-  gsap.to(window, {
-    duration: 1.2, // seconds
-    scrollTo: target,
-    ease: "power2.out",
-  });
+function setVh() {
+  let vh = window.innerHeight * 0.01;
+  document.documentElement.style.setProperty('--vh', `${vh}px`);
 }
+window.addEventListener('resize', setVh);
+window.addEventListener('load', setVh);
