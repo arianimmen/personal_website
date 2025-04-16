@@ -71,6 +71,14 @@ const skillsData = [
     ],
   },
   {
+    id: 8,
+    title: "CS50x: Introduction to Computer Science",
+    text: "CS50x is Harvard University's introduction to the intellectual enterprises of computer science and the art of programming. It covers fundamental concepts such as algorithms, data structures, memory, security, software engineering, and web development. Students learn to think computationally and solve real-world problems using languages like C, Python, SQL, HTML, CSS, and JavaScript. It's an excellent foundation for anyone exploring computer science or preparing for a technical career.",
+    imgURL: "../assets/images/cs50.png",
+    tags: ["Algorithms", "C", "Python", "SQL", "Web Development"],
+  },
+
+  {
     id: 5,
     title: "SQL Basics",
     text: `This certificate shows that I’ve learned the basics of SQL. I know how to
