@@ -194,15 +194,21 @@ button {
   z-index: 10;
   position: absolute;
   top: 0;
-  right: 0;
+  right: -100%;
   background-color: var(--color-background);
   height: 100vh;
-  display: none;
+  display: flex;
   flex-direction: column;
   align-items: end;
+  width: 150px;
+  transition: right 0.3s ease-in-out;
 }
 
-.header_hamMenu svg{
+.header_hamMenu.display {
+  right: 0;
+}
+
+.header_hamMenu svg {
   margin: 2rem;
 }
 
@@ -211,13 +217,14 @@ button {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 100%;
 }
 
-.header_hamMenu__items a{
+.header_hamMenu__items a {
   padding: 2rem 3rem;
 }
 
-.header_hamMenu__back{
+.header_hamMenu__back {
   background-color: rgba(0, 0, 0, 0.227);
   display: none;
   position: fixed;
@@ -226,6 +233,13 @@ button {
   top: 0px;
   right: 0;
   z-index: 2;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.header_hamMenu__back.display {
+  display: block;
+  opacity: 1;
 }
 
 .display {
