@@ -200,8 +200,9 @@ button {
   display: flex;
   flex-direction: column;
   align-items: end;
-  width: 150px;
+  width: 200px;
   transition: right 0.3s ease-in-out;
+  padding-top: 4rem;
 }
 
 .header_hamMenu.display {
@@ -209,15 +210,22 @@ button {
 }
 
 .header_hamMenu svg {
-  margin: 2rem;
+  margin: 0;
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  min-width: 24px;
+  min-height: 24px;
+  z-index: 11;
 }
 
 .header_hamMenu__items {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   width: 100%;
+  padding-top: 1rem;
 }
 
 .header_hamMenu__items a {
