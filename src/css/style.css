@@ -152,7 +152,7 @@ button {
   }
   .header__menu {
     position: relative;
-    left: 5rem;
+    left: 3.7rem;
     display: flex;
     justify-content: space-between;
     width: 30rem;
