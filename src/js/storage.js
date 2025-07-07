@@ -32,6 +32,22 @@ const skillsData = [
     ],
   },
   {
+  id: 9,
+  title: "TryHackMe: Security 101",
+  text: `Security 101 is an introductory course by TryHackMe that covers the fundamentals of cybersecurity. It introduces core concepts such as threat actors, common attack techniques, and basic defense mechanisms. Learners also gain hands-on experience with Linux, networking, and basic command-line tools used in real-world security operations. Ideal for beginners starting their journey into cybersecurity.`,
+  imgURL: "../assets/images/tryhackme.png",
+  tags: [
+    "Cybersecurity Fundamentals",
+    "Threat Actors",
+    "Common Attacks",
+    "Linux Basics",
+    "Command-Line Tools",
+    "Networking Essentials",
+    "Defensive Security"
+  ],
+}
+
+  {
     id: 3,
     title: "Frontend Web Development (HTML, CSS & JavaScript)",
     text: `This certificate demonstrates core front-end development skills using
@@ -51,26 +67,7 @@ const skillsData = [
       "Media Queries",
     ],
   },
-  {
-    id: 4,
-    title: "Python Programming",
-    text: `This certificate shows that I’ve learned the basics of Python. I can
-         write scripts, work with data like lists and dictionaries, and build
-         simple programs using loops, functions, and even classes. I also got
-         some experience with reading and writing files, handling errors, and
-         using Python to automate everyday tasks. Great for getting started
-         with coding, automation.`,
-    imgURL: "../assets/images/python.png",
-    tags: [
-      "Variables & Data Types",
-      "Lists & Dictionaries",
-      "Loops",
-      "Functions",
-      "File Handling",
-      "Error Handling",
-    ],
-  },
-  {
+   {
     id: 8,
     title: "CS50x: Introduction to Computer Science",
     text: "CS50x is Harvard University's introduction to the intellectual enterprises of computer science and the art of programming. It covers fundamental concepts such as algorithms, data structures, memory, security, software engineering, and web development. Students learn to think computationally and solve real-world problems using languages like C, Python, SQL, HTML, CSS, and JavaScript. It's an excellent foundation for anyone exploring computer science or preparing for a technical career.",
@@ -97,6 +94,26 @@ const skillsData = [
       "Basic Relational Concepts",
     ],
   },
+  {
+    id: 4,
+    title: "Python Programming",
+    text: `This certificate shows that I’ve learned the basics of Python. I can
+         write scripts, work with data like lists and dictionaries, and build
+         simple programs using loops, functions, and even classes. I also got
+         some experience with reading and writing files, handling errors, and
+         using Python to automate everyday tasks. Great for getting started
+         with coding, automation.`,
+    imgURL: "../assets/images/python.png",
+    tags: [
+      "Variables & Data Types",
+      "Lists & Dictionaries",
+      "Loops",
+      "Functions",
+      "File Handling",
+      "Error Handling",
+    ],
+  },
+ 
   {
     id: 7,
     title: "Google IT Support Specialist",
