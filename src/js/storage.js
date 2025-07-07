@@ -45,7 +45,7 @@ const skillsData = [
     "Networking Essentials",
     "Defensive Security"
   ],
-}
+},
 
   {
     id: 3,
